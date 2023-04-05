@@ -1,0 +1,8 @@
+pipeline {
+  agent {
+    kubernetes {
+      yamlFile 'deploy.yaml'
+      retries 2
+    }
+  }
+}
