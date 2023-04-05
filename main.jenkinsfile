@@ -5,4 +5,14 @@ pipeline {
       retries 2
     }
   }
+  stages {
+    stage ("hello") {
+      agent any
+      steps {
+        script {
+          echo "hello world"
+        }
+      }
+    }
+  }
 }
